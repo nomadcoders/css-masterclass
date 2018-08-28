@@ -9,9 +9,11 @@
     <style>
         .father {
             display: grid;
-            grid-template-columns: 30px 50px;
-            grid-template-rows: 30px 12px;
+            grid-template-columns: 300px 150px;
+            grid-template-rows: 300px 120px;
             grid-gap: 5px;
+            grid-auto-columns: 60px;
+            grid-auto-flow: column;
         }
 
         .box {
@@ -23,6 +25,10 @@
 <body>
 
     <div class="father">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
