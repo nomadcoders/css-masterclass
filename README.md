@@ -7,7 +7,7 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] CSS Flex Basics
 - [x] Main Axis and Cross Axis
 - [x] Flex Direction
-- [ ] Flex Wrap
+- [x] Flex Wrap
 - [ ] Align Self
 
 ### CSS Grid
