@@ -43,8 +43,44 @@ Custom Media & Media Query Ranges
   }
 }
 
-*/
+System UI
 
 h1 {
-  font-family: system-ui;
+  color: system-ui;
+}
+
+Gray
+
+h1 {
+  color: gray(10);
+}
+
+Color Mod
+
+h1 {
+  color: color-mod(#f1c40f alpha(50%));
+}
+
+*/
+
+main {
+  background-color: blue;
+  & section {
+    background-color: red;
+    width: 500px;
+    & li {
+      background-color: yellow;
+      width: 400px;
+      & a {
+        color: black;
+        &:hover {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: red;
 }
