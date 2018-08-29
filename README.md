@@ -24,7 +24,13 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] Line Naming
 - [x] Grid Row, Row Start and End
 - [x] Grid Area
-- [ ] Justify, Align, Place Self
+- [x] Justify, Align, Place Self
+
+### Using CSS4
+
+- [ ] Installing Parcel
+- [ ] Configuring PostCSS
+- [ ] Testing
 
 ### CSS4 Selectors
 
@@ -34,12 +40,6 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [ ] Media Query Ranges`
 - [ ] font-variant, gray(), system-ui
 - [ ] Nesting Rules
-
-### Using CSS4
-
-- [ ] Installing Parcel
-- [ ] Configuring PostCSS
-- [ ] Testing
 
 ### CSS Grid KISS
 
