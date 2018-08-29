@@ -12,7 +12,8 @@ li:not(.target) {
   background-color: blue;
 }
 
-*/
+
+CSS Variables
 
 :root {
   --awesomeColor: 1px solid red;
@@ -22,8 +23,20 @@ li:first-child a {
   border: var(--awesomeColor);
 }
 
+Custom Selectors
+
 @custom-selector :--headers h1, h2, h3, h4, h5, h6;
 
 :--headers {
   color: #8e44ad;
+}
+
+*/
+
+@custom-media --ipad-size (450px <= width < 850px);
+
+@media (--ipad-size) {
+  body {
+    background-color: red;
+  }
 }
