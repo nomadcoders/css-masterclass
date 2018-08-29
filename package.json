@@ -15,5 +15,15 @@
   "homepage": "https://github.com/nomadcoders/css-masterclass#readme",
   "scripts": {
     "start": "parcel index.html"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^5.3.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
   }
 }
