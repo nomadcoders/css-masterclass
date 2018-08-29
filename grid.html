@@ -11,8 +11,7 @@
             display: grid;
             grid-gap: 10px;
             grid-auto-rows: 100px;
-            grid-auto-flow: dense;
-            grid-template-columns: [first-line] 1fr [awesome-line] 1fr [sexy-line] 1fr [nico-line] 1fr [lynn-line] 1fr [line-line];
+            grid-template-columns: repeat(5, 1fr);
         }
 
         .box {
@@ -31,8 +30,8 @@
         }
 
         .box:first-child {
-            grid-column-start: sexy-line;
-            grid-column-end: lynn-line;
+            grid-row: span 4;
+            grid-column: span 4;
         }
     </style>
 </head>
