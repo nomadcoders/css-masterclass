@@ -31,12 +31,20 @@ Custom Selectors
   color: #8e44ad;
 }
 
-*/
 
+Custom Media & Media Query Ranges
+
+@custom-media --ipad-size (max-width: 850px);
 @custom-media --ipad-size (450px <= width < 850px);
 
 @media (--ipad-size) {
   body {
     background-color: red;
   }
+}
+
+*/
+
+h1 {
+  font-family: system-ui;
 }

@@ -39,7 +39,7 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] @custom-selector
 - [x] @custom-media
 - [x] Media Query Ranges
-- [ ] font-variant, gray(), system-ui
+- [x] color-mod, gray(), system-ui
 - [ ] Nesting Rules
 
 ### CSS Grid KISS
