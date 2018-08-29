@@ -18,8 +18,8 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] fr unit, repeat
 - [x] minmax, max-content, min-content
 - [x] auto-fill, auto-fit
+- [x] Justify Content, Align Content and Place Content
 - [ ] Justify Items, Align Items and Place Items
-- [ ] Justify Content, Align Content and Place Content
 - [ ] Grid Column, Row Start and End
 - [ ] Grid Area
 - [ ] Justify, Align, Place Self
@@ -29,7 +29,7 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [ ] :any-link , :matches , :not
 - [ ] CSS Variables
 - [ ] @custom-media, @custom-selector
-- [ ] Media Query Ranges
+- [ ] Media Query Ranges`
 - [ ] font-variant, gray(), system-ui
 - [ ] Nesting Rules
 
