@@ -5,11 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Project Four</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <header class="header">
+        <hgroup class="header__titles">
+            <h1 class="header__title">Good morning</h1>
+            <h4 class="header__subtitle">What are you eating today?</h4>
+        </hgroup>
+        <div class="header__icons">
+            <span class="header__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z" /></svg>
+            </span>
+            <span class="header__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2c3.032 0 5.5 2.467 5.5 5.5 0 1.458-.483 3.196-3.248 5.59 4.111 1.961 6.602 5.253 7.482 8.909h-19.486c.955-4.188 4.005-7.399 7.519-8.889-1.601-1.287-3.267-3.323-3.267-5.61 0-3.033 2.468-5.5 5.5-5.5zm0-2c-4.142 0-7.5 3.357-7.5 7.5 0 2.012.797 3.834 2.086 5.182-5.03 3.009-6.586 8.501-6.586 11.318h24c0-2.791-1.657-8.28-6.59-11.314 1.292-1.348 2.09-3.172 2.09-5.186 0-4.143-3.358-7.5-7.5-7.5z" /></svg>
+            </span>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="recipe">
+            <div class="recipe__heart">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" /></svg>
+            </div>
+            <div class="recipe__info">
+                <h4 class="recipe__title">
+                    Oatmeal cookie
+                </h4>
+                <div class="recipe__meta">
+                    <span class="recipe__meta-data">Vegan</span>
+                    <span class="recipe__meta-data">10 minutes</span>
+                    <span class="recipe__meta-data">3 people</span>
+                </div>
+                <div class="recipe__social">
+                    <span class="recipe__social-item">4.3 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524-4.721 2.525.942-5.27-3.861-3.71 5.305-.733 2.335-4.817zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" /></svg></span>
+                    <span class="recipe__social-item">94 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M20 15c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1m-3 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1m-3 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1m5.415 4.946c-1 .256-1.989.482-3.324.482-3.465 0-7.091-2.065-7.091-5.423 0-3.128 3.14-5.672 7-5.672 3.844 0 7 2.542 7 5.672 0 1.591-.646 2.527-1.481 3.527l.839 2.686-2.943-1.272zm-13.373-3.375l-4.389 1.896 1.256-4.012c-1.121-1.341-1.909-2.665-1.909-4.699 0-4.277 4.262-7.756 9.5-7.756 5.018 0 9.128 3.194 9.467 7.222-1.19-.566-2.551-.889-3.967-.889-4.199 0-8 2.797-8 6.672 0 .712.147 1.4.411 2.049-.953-.126-1.546-.272-2.369-.483m17.958-1.566c0-2.172-1.199-4.015-3.002-5.21l.002-.039c0-5.086-4.988-8.756-10.5-8.756-5.546 0-10.5 3.698-10.5 8.756 0 1.794.646 3.556 1.791 4.922l-1.744 5.572 6.078-2.625c.982.253 1.932.407 2.85.489 1.317 1.953 3.876 3.314 7.116 3.314 1.019 0 2.105-.135 3.242-.428l4.631 2-1.328-4.245c.871-1.042 1.364-2.384 1.364-3.75" /></svg></span>
+                    <span class="recipe__social-item">123 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M21.406 9.558c-1.21-.051-2.87-.278-3.977-.744.809-3.283 1.253-8.814-2.196-8.814-1.861 0-2.351 1.668-2.833 3.329-1.548 5.336-3.946 6.816-6.4 7.401v-.73h-6v12h6v-.904c2.378.228 4.119.864 6.169 1.746 1.257.541 3.053 1.158 5.336 1.158 2.538 0 4.295-.997 5.009-3.686.5-1.877 1.486-7.25 1.486-8.25 0-1.648-1.168-2.446-2.594-2.506zm-17.406 10.442h-2v-8h2v8zm15.896-5.583s.201.01 1.069-.027c1.082-.046 1.051 1.469.004 1.563l-1.761.099c-.734.094-.656 1.203.141 1.172 0 0 .686-.017 1.143-.041 1.068-.056 1.016 1.429.04 1.551-.424.053-1.745.115-1.745.115-.811.072-.706 1.235.109 1.141l.771-.031c.822-.074 1.003.825-.292 1.661-1.567.881-4.685.131-6.416-.614-2.239-.965-4.438-1.934-6.959-2.006v-6c3.264-.749 6.328-2.254 8.321-9.113.898-3.092 1.679-1.931 1.679.574 0 2.071-.49 3.786-.921 5.533 1.061.543 3.371 1.402 6.12 1.556 1.055.059 1.024 1.455-.051 1.584l-1.394.167s-.608 1.111.142 1.116z" /></svg></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="recommended">
+        <header class="recommended__header">
+            <h4 class="recommended__title">Recommended</h4>
+            <small class="recommended__small">See all</small>
+        </header>
+        <div class="recommended__grid">
+            <article class="recommended-recipe">
+                <div class="recommended-recipe__info">
+                    <h5 class="recommended-recipe__title">Pomegranate Juice</h5>
+                    <h6 class="recommended-recipe__subtitle">Something I can't read</h6>
+                </div>
+            </article>
+            <article class="recommended-recipe">
+                <div class="recommended-recipe__info">
+                    <h5 class="recommended-recipe__title">Pomegranate Juice</h5>
+                    <h6 class="recommended-recipe__subtitle">Something I can't read</h6>
+                </div>
+            </article>
+            <article class="recommended-recipe">
+                <div class="recommended-recipe__info">
+                    <h5 class="recommended-recipe__title">Pomegranate Juice</h5>
+                    <h6 class="recommended-recipe__subtitle">Something I can't read</h6>
+                </div>
+            </article>
+            <article class="recommended-recipe">
+                <div class="recommended-recipe__info">
+                    <h5 class="recommended-recipe__title">Pomegranate Juice</h5>
+                    <h6 class="recommended-recipe__subtitle">Something I can't read</h6>
+                </div>
+            </article>
+        </div>
+    </section>
 
 </body>
 
