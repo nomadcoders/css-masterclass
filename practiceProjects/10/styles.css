@@ -1,4 +1,9 @@
 :root {
+  --redColor: #e93531;
+}
+
+img {
+  max-width: 100%;
 }
 
 * {
@@ -9,7 +14,9 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -18,4 +25,48 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #fafafc;
+  padding: 150px 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, 200px);
+  grid-auto-columns: minmax(200px, 1fr);
+  grid-auto-rows: 200px;
+  grid-auto-flow: row dense;
+  gap: 20px;
+}
+
+.grid .header {
+  grid-area: span 3 / span 2;
+  align-self: center;
+}
+
+.header .title {
+  transform: rotate(-90deg);
+  transform-origin: 20% 65%;
+  color: var(--redColor);
+  font-size: 90px;
+}
+
+.grid .item {
+  border-top: 10px solid black;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.item .item__number {
+  font-size: 60px;
+}
+
+.grid .item:nth-child(4),
+.grid .item:nth-child(7),
+.grid .item:nth-child(9) {
+  grid-area: span 3 / span 2;
+}
+
+.grid .item:nth-child(4) .item__number,
+.grid .item:nth-child(9) .item__number {
+  font-size: 130px;
 }
