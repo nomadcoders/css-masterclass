@@ -1,4 +1,5 @@
 :root {
+  --greyColor: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -9,13 +10,137 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+html,
+body {
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafc;
+  background-color: white;
+}
+
+body {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 0px 25px 50px;
+}
+
+.header {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__title {
+  font-size: 28px;
+}
+
+.header__nav .header__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--greyColor);
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.content .content__title {
+  font-size: 86px;
+  text-transform: uppercase;
+}
+
+.content .content__text {
+  color: var(--greyColor);
+  font-size: 14px;
+}
+
+.content .view-more {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.view-more .view-more__icon {
+  background-color: var(--greyColor);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.view-more__icon svg {
+  fill: white;
+}
+
+.view-more .view-more__text {
+  text-transform: uppercase;
+  color: var(--greyColor);
+  font-size: 14px;
+}
+
+.items {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.item .item__wrapper {
+  height: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+.item .item__pre-title {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.item .item__title {
+  margin-bottom: 80px;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.btns {
+  position: absolute;
+  top: 25px;
+}
+
+.btns svg {
+  fill: var(--greyColor);
+}
+
+.btns svg:first-child {
+  margin-right: 10px;
 }
