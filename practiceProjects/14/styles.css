@@ -9,7 +9,11 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6,
+body,
+html,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -17,5 +21,87 @@ h5 {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafc;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 25px;
+}
+
+.header .header__nav {
+  width: 40%;
+}
+
+.header .header__list {
+  list-style: none;
+  margin-left: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.content .content__hero {
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://i.pinimg.com/564x/d3/30/7b/d3307b5c21bcdbf723630ef5746af694.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: 20px;
+  font-size: 160px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.content .content__blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__blog .content__title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.post {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 20px;
+  grid-gap: 40px;
+  place-items: center center;
+  width: 100%;
+  place-content: center center;
+}
+
+.post .post__column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post .post__image {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.post .post__text {
+  width: 50%;
+  font-size: 18px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
