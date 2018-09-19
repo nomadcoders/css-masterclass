@@ -9,13 +9,149 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6,
+html,
+body,
+p {
   margin: 0;
   padding: 0;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafc;
+  background-color: #f4f4f4;
+  padding-left: 50px;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.nav {
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+.nav .nav__icon {
+  margin-bottom: auto;
+}
+
+.nav .nav__list {
+  margin-bottom: auto;
+  display: flex;
+  list-style: none;
+  transform: rotate(-90deg);
+  font-weight: 600;
+}
+
+.nav .nav__list > * {
+  margin-right: 10px;
+}
+
+.header {
+  margin-top: 25px;
+  align-self: start;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.header .header__title {
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pagination {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.pagination .pagination__number--current {
+  text-decoration: line-through;
+}
+
+.slider {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider .slider__arrow:first-child {
+  margin-right: 20px;
+}
+.slider .slider__arrow:last-child {
+  margin-left: 20px;
+}
+
+.slider .slider__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  grid-gap: 20px;
+  background-color: white;
+}
+
+.slider__content .slider__photo {
+  background-image: url(https://i.pinimg.com/564x/e0/b5/04/e0b504e3167fe6ed84ff6255130efa5a.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.info .info__pre-title {
+  text-transform: uppercase;
+  color: #3498db;
+  font-weight: 300;
+}
+
+.info .info__pre-title,
+.info .info__title,
+.info .info__intro {
+  margin-bottom: 40px;
+}
+
+.info .info__title {
+  font-size: 44px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.info .info__intro {
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.info .info__date {
+  text-transform: uppercase;
+  font-weight: 300;
 }

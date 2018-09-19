@@ -5,11 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Practice 13</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <nav class="nav">
+        <span class="nav__icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg></span>
+        <ul class="nav__list">
+            <li class="nav__list-item">About</li>
+            <span class="nav__divider">x</span>
+            <li class="nav__list-item">Categories</li>
+            <span class="nav__divider">x</span>
+            <li class="nav__list-item">Features</li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">Popular Stories</h1>
+        <span class="header__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                <path d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z" /></svg>
+        </span>
+    </header>
+
+    <main class="slider">
+        <span class="slider__arrow">←</span>
+        <section class="slider__content">
+            <div class="slider__photo"></div>
+            <div class="info">
+                <h5 class="info__pre-title">Lifestyle</h5>
+                <h2 class="info__title">The Joys and Pitfalls of Solo Travel</h2>
+                <p class="info__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde quibusdam
+                    commodi voluptate ullam! Id magnam quibusdam natus saepe commodi, temporibus corporis aliquid
+                    architecto totam obcaecati fugit veritatis nesciunt neque.</p>
+                <small class="info__date">Feb 2, 2019</small>
+            </div>
+        </section>
+        <span class="slider__arrow">→</span>
+    </main>
+
+    <footer class="pagination">
+        <span class="pagination__number pagination__number--current">1</span>
+        <span class="pagination__number">2</span>
+        <span class="pagination__number">3</span>
+    </footer>
 
 </body>
 
