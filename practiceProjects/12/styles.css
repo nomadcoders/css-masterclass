@@ -1,4 +1,6 @@
 :root {
+  --greyColor: rgba(0, 0, 0, 0.6);
+  --borderBottom: 3px solid black;
 }
 
 * {
@@ -9,7 +11,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+html,
+body,
+p {
   margin: 0;
   padding: 0;
 }
@@ -17,5 +22,122 @@ h5 {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fafafc;
+  background-color: #f4f4f4;
+  padding: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.header .header__title {
+  font-size: 22px;
+}
+
+.header .header__title span,
+.header .header__subtitle span {
+  display: block;
+}
+
+.header .header__subtitle {
+  font-size: 62px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+}
+
+.content .content__sidebar {
+  grid-column: span 2;
+}
+
+.content .content__projects {
+  grid-column: span 3;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+.box .box__title {
+  padding-bottom: 10px;
+  border-bottom: var(--borderBottom);
+  margin-bottom: 25px;
+}
+
+.box .box__categories {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box__categories .box__category {
+  color: var(--greyColor);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.box__categories .box__category:last-child {
+  margin-bottom: 0;
+}
+
+.box__categories .box__category--selected {
+  color: black;
+}
+
+.box .box__text {
+  line-height: 1.5;
+}
+
+.content__projects .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.project {
+  border-bottom: var(--borderBottom);
+  padding-bottom: 20px;
+}
+
+.project .project__image {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.project .project__title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.project .project__author {
+  color: var(--greyColor);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.project .project__date,
+.project .project__location {
+  color: var(--greyColor);
+  display: block;
+}
+
+.project .project__date {
+  font-weight: 300;
+}
+
+.project .project__location {
+  margin-bottom: 30px;
+}
+
+.project .project__intro {
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
